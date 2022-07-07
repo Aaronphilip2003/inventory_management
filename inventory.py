@@ -1,5 +1,6 @@
 from tkinter import *
 import sqlite3
+import os
 
 conn=sqlite3.connect("people.db")
 cursor=conn.cursor()
@@ -16,7 +17,7 @@ print(list_names)
 conn.close()
 
 for i in list_names:
-    conn=sqlite3.connect(f"{i}.db")
+    conn=sqlite3.connect(os.path.join('./databases',f"{i}.db"))
     cursor=conn.cursor()
     cursor.execute("CREATE TABLE IF NOT EXISTS equipment_issued(equipment_name)")
     conn.close()
