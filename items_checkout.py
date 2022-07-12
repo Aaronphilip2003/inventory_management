@@ -1,4 +1,3 @@
-from operator import eq
 import os
 import sqlite3
 
