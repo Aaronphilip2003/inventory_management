@@ -37,8 +37,8 @@ if flag == 1:
 
     root = Tk()
 
-    root.geometry("300x300")
-
+    root.geometry("450x450")
+    root.title("SELECT THE ITEMS THAT YOU ARE ISSUING:")
     # Dropdown menu options
     options = [
         "Camera: ZWO 1600 MM pro monochrom ",
