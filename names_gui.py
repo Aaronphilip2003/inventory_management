@@ -15,6 +15,7 @@ def insert():
 
 root=Tk()
 root.geometry("500x300")
+root.title("ADD YOUR NAME TO THE DATABASE:")
 
 lbl_main=Label(root,text="Database Entry")
 lbl_main.place(x=180,y=50)
